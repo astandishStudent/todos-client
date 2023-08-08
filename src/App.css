@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  --blk: #000;
+}
+
+.App {
+  min-height: 100vh;
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.container {
+  display: flex;
+  height: 80vh;
+  border: 1px solid grey;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+
+.todoForm {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.button-edit {
+  border-radius: 20px 0 0 20px;
+  margin: 0 1px;
+}
+
+.button-delete {
+  border-radius: 0 20px 20px 0;
+  margin: 0 1px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(77, 71, 71);
+}
+
+.allTodos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.singleTodo {
+  border-radius: 50px;
+  margin: 10px 0;
+  background-color: #585d5d;
+  padding: 10px 20px;
+  display: flex;
+  width: 250px;
+  align-items: center;
+  border: inset 8px #000;
+  opacity: 0.7;
+}
+.todoText {
+  flex: 1;
+}
